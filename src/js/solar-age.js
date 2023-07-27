@@ -24,4 +24,20 @@ export default class SolarAge {
   calculateJupiterAge() {
     return this.earth_age / SolarAge.JUPITER_YEAR_RATIO;
   }
+
+  yearsPassedSinceBirthday(birthday_age) {
+    const earthYearsPassed = this.earth_age - birthday_age;
+    const mercuryYearsPassed = earthYearsPassed / SolarAge.MERCURY_YEAR_RATIO;
+    const venusYearsPassed = earthYearsPassed / SolarAge.VENUS_YEAR_RATIO;
+    const marsYearsPassed = earthYearsPassed / SolarAge.MARS_YEAR_RATIO;
+    const jupiterYearsPassed = earthYearsPassed / SolarAge.JUPITER_YEAR_RATIO;
+
+    return {
+      Earth: earthYearsPassed,
+      Mercury: mercuryYearsPassed,
+      Venus: venusYearsPassed,
+      Mars: marsYearsPassed,
+      Jupiter: jupiterYearsPassed,
+    };
+  }
 }

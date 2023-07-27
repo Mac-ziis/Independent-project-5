@@ -33,6 +33,10 @@ describe('SolarAge', () => {
     };
 
     const yearsPassed = calculator.yearsPassedSinceBirthday(birthdayAge);
-    expect(yearsPassed).toEqual(expectedYearsPassed);
+    expect(yearsPassed.Earth).toEqual(13);
+    expect(yearsPassed.Mercury).toBeCloseTo(expectedYearsPassed.Mercury, 2);
+    expect(yearsPassed.Venus).toBeCloseTo(expectedYearsPassed.Venus, 2);
+    expect(yearsPassed.Mars).toBeCloseTo(expectedYearsPassed.Mars, 2);
+    expect(yearsPassed.Jupiter).toBeCloseTo(expectedYearsPassed.Jupiter, 2);
   });
 });
