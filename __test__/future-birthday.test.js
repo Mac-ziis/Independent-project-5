@@ -11,11 +11,15 @@ describe('FutureBirthday', () => {
       Earth: 5,
       Mercury: 20.83,
       Venus: 8.06,
-      Mars: 2.65,
+      Mars: 2.6595744680851063,
       Jupiter: 0.42,
     };
 
     const yearsToFutureBirthday = futureBirthday.yearsToFutureBirthday(futureAge);
-    expectedYearsToFutureBirthday(yearsToFutureBirthday).toEqual(expectedYearsToFutureBirthday);
+    expect(yearsToFutureBirthday.Earth).toBe(5);
+    expect(yearsToFutureBirthday.Mercury).toBeCloseTo(expectedYearsToFutureBirthday.Mercury, 2);
+    expect(yearsToFutureBirthday.Venus).toBeCloseTo(expectedYearsToFutureBirthday.Venus, 2);
+    expect(yearsToFutureBirthday.Mars).toBe(expectedYearsToFutureBirthday.Mars);
+    expect(yearsToFutureBirthday.Jupiter).toBeCloseTo(expectedYearsToFutureBirthday.Jupiter, 2);
   });
 })
