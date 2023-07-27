@@ -20,4 +20,8 @@ export default class SolarAge {
   calculateMarsAge() {
     return this.earth_age / SolarAge.MARS_YEAR_RATIO;
   }
+
+  calculateJupiterAge() {
+    return this.earth_age / SolarAge.JUPITER_YEAR_RATIO;
+  }
 }
