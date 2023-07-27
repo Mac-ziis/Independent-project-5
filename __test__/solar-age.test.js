@@ -10,4 +10,9 @@ describe('SolarAge', () => {
     const calculator = new SolarAge(56);
     expect(calculator.calculateVenusAge()).toBeCloseTo(90.32, 2);
   });
+
+  test('Should calculate your age in Mars years', () => {
+    const calculator = new SolarAge(56);
+    expect(calculator.calculateMarsAge()).toBeCloseTo(29.79, 2);
+  });
 });
