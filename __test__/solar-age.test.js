@@ -20,4 +20,19 @@ describe('SolarAge', () => {
     const calculator = new SolarAge(56);
     expect(calculator.calculateJupiterAge()).toBeCloseTo(4.72, 2);
   });
+
+  test('Should calculate years passed since birthday on each planet', () => {
+    const calculator = new SolarAge(56);
+    const birthdayAge = 43;
+    const expectedYearsPassed = {
+      Earth: 13,
+      Mercury: 54.17,
+      Venus: 20.97,
+      Mars: 6.91,
+      Jupiter: 1.10,
+    };
+
+    const yearsPassed = calculator.yearsPassedSinceBirthday(birthdayAge);
+    expect(yearsPassed).toEqual(expectedYearsPassed);
+  });
 });
