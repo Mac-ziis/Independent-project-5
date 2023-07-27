@@ -7,10 +7,10 @@ export default class FutureBirthday {
 
   yearsToFutureBirthday(future_age) {
     const earthYearsToFuture = future_age - this.earth_age;
-    const mercuryYearsToFuture = earthYearsToFuture / SolarAge.MERCURY_YEAR_RATIO;
-    const venusYearsToFuture = earthYearsToFuture / SolarAge.VENUS_YEAR_RATIO;
-    const marsYearsToFuture = earthYearsToFuture / SolarAge.MARS_YEAR_RATIO;
-    const jupiterYearsToFuture = earthYearsToFuture / SolarAge.JUPITER_YEAR_RATIO;
+    const mercuryYearsToFuture = earthYearsToFuture / 0.24;
+    const venusYearsToFuture = earthYearsToFuture / 0.62;
+    const marsYearsToFuture = earthYearsToFuture / 1.88;
+    const jupiterYearsToFuture = earthYearsToFuture / 11.86;
 
     return {
       Earth: earthYearsToFuture,

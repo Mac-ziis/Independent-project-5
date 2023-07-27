@@ -1,38 +1,31 @@
 
 export default class SolarAge {
-  static MERCURY_YEAR_RATIO = 0.24;
-  static VENUS_YEAR_RATIO = 0.62;
-  static MARS_YEAR_RATIO = 1.88;
-  static JUPITER_YEAR_RATIO = 11.86;
-
   constructor(earth_age) {
     this.earth_age = earth_age;
   }
 
-
-
   calculateMercuryAge() {
-    return this.earth_age / SolarAge.MERCURY_YEAR_RATIO;
+    return this.earth_age / 0.24;
   }
 
   calculateVenusAge() {
-    return this.earth_age / SolarAge.VENUS_YEAR_RATIO;
+    return this.earth_age / 0.62;
   }
 
   calculateMarsAge() {
-    return this.earth_age / SolarAge.MARS_YEAR_RATIO;
+    return this.earth_age / 1.88;
   }
 
   calculateJupiterAge() {
-    return this.earth_age / SolarAge.JUPITER_YEAR_RATIO;
+    return this.earth_age / 11.86;
   }
 
   yearsPassedSinceBirthday(birthday_age) {
     const earthYearsPassed = this.earth_age - birthday_age;
-    const mercuryYearsPassed = earthYearsPassed / SolarAge.MERCURY_YEAR_RATIO;
-    const venusYearsPassed = earthYearsPassed / SolarAge.VENUS_YEAR_RATIO;
-    const marsYearsPassed = earthYearsPassed / SolarAge.MARS_YEAR_RATIO;
-    const jupiterYearsPassed = earthYearsPassed / SolarAge.JUPITER_YEAR_RATIO;
+    const mercuryYearsPassed = earthYearsPassed / 0.24;
+    const venusYearsPassed = earthYearsPassed / 0.62;
+    const marsYearsPassed = earthYearsPassed / 1.88;
+    const jupiterYearsPassed = earthYearsPassed / 11.86;
 
     return {
       Earth: earthYearsPassed,
