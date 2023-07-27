@@ -9,6 +9,8 @@ export default class SolarAge {
     this.earth_age = earth_age;
   }
 
+
+
   calculateMercuryAge() {
     return this.earth_age / SolarAge.MERCURY_YEAR_RATIO;
   }

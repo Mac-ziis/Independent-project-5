@@ -6,5 +6,37 @@
 </head>
 <body>
   <h1>Solar Age Calculator</h1>
+  <div>
+    <label for="earthAge">Enter your age on Earth (in years): </label>
+    <input type="number" id="earthAge" step="1" min="1" required>
+    <button id="calculateBtn">Calculate</button>
+  </div>
+  <div id="results">
+    <h2>Age on Different Planets</h2>
+    <p>Mercury: <span id="mercuryAge"></span> years</p>
+    <p>Venus: <span id="venusAge"></span> years</p>
+    <p>Mars: <span id="marsAge"></span> years</p>
+    <p>Jupiter: <span id="jupiterAge"></span> years</p>
+    <br />
+    <h2>Years Passed Since Birthday</h2>
+    <label for="birthdayAge">Enter your past birthday age on Earth (inyears): </label>
+    <input type="number" id="birthdayAge" step="1" min="1" required>
+    <button id="yearsPassedBtn">Calculate</button>
+    <p>Years passed on Earth: <span id="yearsPassedEarth"></span> years</p>
+    <p>Years passed on Mercury: <span id="yearsPassedMercury"></span> years</p>
+    <p>Years passed on Venus: <span id="yearsPassedVenus"></span> years</p>
+    <p>Years passed on Mars: <span id="yearsPassedMars"></span> years</p>
+    <p>Years passed on Jupiter: <span id="yearsPassedJupiter"></span> years</p>
+    <br />
+    <h2>Years to Future Birthday</h2>
+    <label for="futureAge">Enter your future age on Earth (in years):</label>
+    <input type="number" id="futureAge" step="1" min="1" required>
+    <button id="yearsToFutureBtn">Calculate</button>
+    <p>Years to future birthday on Earth: <span id="yearsToFutureEarth"></span> years</p>
+    <p>Years to future birthday on Mercury: <span id="yearsToFutureMercury"></span> years</p>
+    <p>Years to future birthday on Venus: <span id="yearsToFutureVenus"></span> years</p>
+    <p>Years to future birthday on Mars: <span id="yearsToFutureMars"></span> years</p>
+    <p>Years to future birthday on Jupiter: <span id="yearsToFutureJupiter"></span> years</p>
+  </div>
 </body>
 </html>
