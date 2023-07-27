@@ -1,7 +1,7 @@
 {
   "name": "Solar Age Calculator",
   "version": "1.0.0",
-  "description": "This application will take your age and return the calculation of that age on celestial bodies around the neighboring space. Then it will determing how many years have yet to pass until future birthdays on those celestial bodies.",
+  "description": "This application will take your age and return the calculation of that age while on celestial bodies around the neighboring space. Then it will determing how many years have yet to pass until future birthdays on those celestial bodies.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",

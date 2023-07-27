@@ -15,4 +15,9 @@ describe('SolarAge', () => {
     const calculator = new SolarAge(56);
     expect(calculator.calculateMarsAge()).toBeCloseTo(29.79, 2);
   });
+
+  test('Should caclculate your age in Jupiter years', () => {
+    const calculator = new SolarAge(56);
+    expect(calculator.calculateJupiterYears()).toBeCloseTo(4.72, 2);
+  });
 });
