@@ -12,4 +12,8 @@ export default class SolarAge {
   calculateMercuryAge() {
     return this.earth_age / SolarAge.MERCURY_YEAR_RATIO;
   }
+
+  calculateVenusAge() {
+    return this.earth_age / SolarAge.VENUS_YEAR_RATIO;
+  }
 }
