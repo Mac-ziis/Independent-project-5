@@ -25,7 +25,7 @@ _This Solar Age Calculator will take your inputted age and return how old you wo
 
 * _In your command terminal you will type the following: git clone https://github.com/Mac-ziis/Independent-Project-5_
 * _Once the project is cloned to your machine, navigate to the directory and open the main project directory along with all of the files included. This will require Vs Code or software with similar capabilities._
-* _Once the file/files are open in your software, in this case I am using Visual studio code, you will type int0 your command terminal: npm install - to initialize and install the included webpacks onto your machine._
+* _Once the file/files are open in your software, in this case I am using Visual studio code, you will type into your command terminal: npm install - to initialize and install the included webpacks onto your machine._
 * _Then, in your command terminal you will enter: npm run start - to complete the build and open the live web browser._
 * _Lastly, you will enter: npm run test - this will run all included tests through Jest and show the results of each._
 
