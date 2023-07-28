@@ -1,38 +1,41 @@
-# _{Application Name}_
+# _Solar Age Calculator_
 
-#### By _**{List of contributors}**_
+#### By _**Mac Granger**_
 
-#### _{Brief description of application}_
+#### _This application will take your inputted age and show you how old you would be on different celestial bodies! Additionally it will show you what your age would have been on those orbiting planets at a younger age and at a future age!_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _Jest 24.9.0_
+* _eslint 8.18.0_
+* _Babel 7.18.6_
+* _webpack 4.46.0_
+* _node.js_
+* _Github_
+* _Visual Studio Code_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This Solar Age Calculator will take your inputted age and return how old you would be had you lived on Mars, Venus, Jupiter, and Mercury. Additionally it will show you how many years have passed since your last (inputted) birthday on those same planets, as well as how many years will pass until a future (inputted) birthday. All tests are included and passing._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _In your command terminal you will type the following: git clone https://github.com/Mac-ziis/Independent-Project-5_
+* _Once the project is cloned to your machine, navigate to the directory and open the main project directory along with all of the files included. This will require Vs Code or software with similar capabilities._
+* _Once the file/files are open in your software, in this case I am using Visual studio code, you will type int0 your command terminal: npm install - to initialize and install the included webpacks onto your machine._
+* _Then, in your command terminal you will enter: npm run start - to complete the build and open the live web browser._
+* _Lastly, you will enter: npm run test - this will run all included tests through Jest and show the results of each._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Trouble with the form submission, no outputs for years passed || years until future birthday_
 
 ## License
 
-Copyright (c) <year> <copyright holders>
+Copyright (c) 2023 Mac Granger
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
