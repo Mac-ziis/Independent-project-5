@@ -1,4 +1,4 @@
-import SolarAge from './solar-age.js';
+// import SolarAge from './solar-age.js';
 
 export default class FutureBirthday {
   constructor(earth_age) {
